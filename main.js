@@ -55,3 +55,38 @@ $(document).ready(() => {
         }
     })
 })
+
+$(document).ready(function() {
+
+    $('#nav-menu li:nth-child(1) a').on('click',function(event) {
+       event.preventDefault();
+      $('html,body').animate({ scrollTop:$('#homes').offset().top},500);
+    });
+
+    $('#nav-menu li:nth-child(2) a').on('click',function(event) {
+      event.preventDefault();
+     $('html,body').animate({ scrollTop:$('#genres').offset().top},500);
+   });
+
+   $('#nav-menu li:nth-child(3) a').on('click',function(event) {
+      event.preventDefault();
+     $('html,body').animate({ scrollTop:$('#movies').offset().top},500);
+   });
+
+   $('#nav-menu li:nth-child(4) a').on('click',function(event) {
+      event.preventDefault();
+     $('html,body').animate({ scrollTop:$('#seris').offset().top},500);
+   });
+
+   $('#nav-menu li:nth-child(5) a').on('click',function(event) {
+    event.preventDefault();
+   $('html,body').animate({ scrollTop:$('#cartoons').offset().top},500);
+    });
+
+   $('#nav-menu li:nth-child(6) a').on('click',function(event) {
+      event.preventDefault();
+     $('html,body').animate({ scrollTop:$('#abouts').offset().top},500);
+   });
+   /*$('').offset().top hàm tự tính khoảng cách đến thuộc tính đó*/
+  
+  });
